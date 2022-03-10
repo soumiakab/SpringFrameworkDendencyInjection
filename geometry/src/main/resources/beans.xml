@@ -1,7 +1,17 @@
+<!-- Le fichier de configuration
+
+Ce fichier est un document au format XML dont le tag racine est le tag <beans> et qui respecte un schéma fourni par Spring.
+
+Chaque objet géré par le conteneur est défini dans un tag fils <bean>.-->
+
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- La définition d'un objet doit contenir au minimum un identifiant et le nom pleinement qualifié de sa classe. Il peut aussi contenir :
+     les arguments à fournir au constructeur, les valeurs de propriétés, des méthodes d'initialisation et de destruction,
+      des paramètres sur le mode de gestion du cycle de vie de l'objet, ... -->
 
     <!-- Circle Bean -->
     <bean id="circleShape" class="constructExample.Circle"/>
